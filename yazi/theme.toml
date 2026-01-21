@@ -770,3 +770,4 @@ exts = [
   { name = "zip", text = "", fg = "#eed49f" },
 ]
 
+
