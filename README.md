@@ -20,6 +20,13 @@ Dotfiles for ArchLinux (btw)
 - Catppuccin Macchiato
 
 ## Install
+*Paru*
+
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+
 *Niri*
 
 sudo pacman -Syu niri xwayland-satellite xdg-desktop-portal-gnome xdg-desktop-portal-gtk alacritty ly ghostty yazi firefox thunderbird vim spicetify
