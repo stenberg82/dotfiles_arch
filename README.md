@@ -22,7 +22,7 @@ Dotfiles for ArchLinux (btw)
 ## Install
 *Paru*
 
-sudo pacman -S --needed base-devel
+sudo pacman -S --needed base-devel git wget
 
 git clone https://aur.archlinux.org/paru.git
 
@@ -49,3 +49,7 @@ paru -S noctalia-shell // stable
 systemctl enable ly@ttyX.service // X = 1-6
 
 systemctl disable getty@ttyX.service // X = 1-6
+
+*Papirus dark icons*
+
+wget -qO- https://git.io/papirus-icon-theme-install | sh
