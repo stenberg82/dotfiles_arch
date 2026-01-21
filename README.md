@@ -23,22 +23,29 @@ Dotfiles for ArchLinux (btw)
 *Paru*
 
 sudo pacman -S --needed base-devel
+
 git clone https://aur.archlinux.org/paru.git
+
 cd paru
+
 makepkg -si
 
 *Niri*
 
 sudo pacman -Syu niri xwayland-satellite xdg-desktop-portal-gnome xdg-desktop-portal-gtk alacritty ly ghostty yazi firefox thunderbird vim spicetify
+
 paru -S dms-shell-bin matugen wl-clipboard cliphist cava qt6-multimedia-ffmpeg
+
 systemctl --user add-wants niri.service dms
 
 *Noctalia shell*
 
 paru -S noctalia-shell-git // develop
+
 paru -S noctalia-shell // stable
 
 *Ly*
 
 systemctl enable ly@ttyX.service // X = 1-6
+
 systemctl disable getty@ttyX.service // X = 1-6
